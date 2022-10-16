@@ -28,7 +28,7 @@ def inference(model_inputs:dict) -> dict:
     # Run the model
     translate_options = dict(task="translate")
     result = model.transcribe("input.mp3", **translate_options)
-    output = {"text":result}
+#     output = {"text":result}
     os.remove("input.mp3")
     # Return the results as a dictionary
-    return output
+    return result 
