@@ -16,7 +16,7 @@ def inference(model_inputs:dict) -> dict:
 
     link = model_inputs.get('link', None)
 
-    if 'amazonaws' in link: 
+    if 'tinyurl' in link: 
         path = urllib.request.urlretrieve(link, f"{link.split('/')[-1]}.mp4")[0]
 
     else:
