@@ -3,3 +3,4 @@ transformers
 accelerate
 git+https://github.com/openai/whisper.git 
 pytube
+stable-ts
